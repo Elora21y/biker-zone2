@@ -19,6 +19,16 @@
         tailwind.config = {
             theme: {
                 extend: {
+                    keyframes: {
+                        buttonStyle: {
+                            'from': { left: '0', transform: 'scale(1)' },
+                            'to': { left: '0', transform: 'scale(1.1)' },
+                        },
+                    },
+                    animation: {
+                        fadeIn: 'buttonStyle 1s infinite alternate', transition: '1.5s',
+
+                    },
                     colors: {
                         clifford: '#da373d',
                         'primary-color': '#E76F51',
@@ -69,7 +79,7 @@
                 </ul>
             </div>
             <div class="">
-                <a class="btn bg-primary-color text-white px-10 py-4">Login</a>
+                <a class="btn bg-primary-color text-white px-10 py-4 ">Login </a>
             </div>
         </div>
 
@@ -86,7 +96,7 @@
                         </h1>
                         <p class="text-gray-500 font-medium">Amet minim mollit non deserunt ullamco
                             est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-                        <a class="btn bg-primary-color text-white px-10 py-4">Purchase</a>
+                        <a class="btn bg-primary-color text-white px-10 py-4 animate-fadeIn">Purchase</a>
                     </div>
                     <!-- image -->
                     <div class="flex-1">
@@ -107,7 +117,7 @@
                         </h1>
                         <p class="text-gray-500 font-medium">Amet minim mollit non deserunt ullamco
                             est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-                        <a class="btn bg-primary-color text-white px-10 py-4">Purchase</a>
+                        <a class="btn bg-primary-color text-white px-10 py-4 animate-fadeIn">Purchase</a>
                     </div>
                     <!-- image -->
                     <div class="flex-1">
@@ -129,7 +139,7 @@
                         </h1>
                         <p class="text-gray-500 font-medium">Amet minim mollit non deserunt ullamco
                             est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-                        <a class="btn bg-primary-color text-white px-10 py-4">Purchase</a>
+                        <a class="btn bg-primary-color text-white px-10 py-4 animate-fadeIn">Purchase</a>
                     </div>
                     <!-- image -->
                     <div class="flex-1">
@@ -151,7 +161,7 @@
                         </h1>
                         <p class="text-gray-500 font-medium">Amet minim mollit non deserunt ullamco
                             est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-                        <a class="btn bg-primary-color text-white px-10 py-4">Purchase</a>
+                        <a class="btn bg-primary-color text-white px-10 py-4 animate-fadeIn">Purchase</a>
                     </div>
                     <!-- image -->
                     <div class="flex-1">
@@ -373,7 +383,7 @@
     <footer class="footer bg-slate-950 text-neutral-content p-10 lg:flex justify-between">
         <aside>
             <ul class="flex gap-5 text-gray-400">
-                <li><a  href="">Download Now</a></li>
+                <li><a href="">Download Now</a></li>
                 <li><a href="">License</a></li>
             </ul>
             <ul class="flex flex-col md:flex-row gap-5 text-gray-400 overflow-hidden">
@@ -384,22 +394,23 @@
                 <li><a href="">Help</a></li>
                 <li><a href="">Privacy Policy</a></li>
             </ul>
-          <p class="text-gray-400">
-            © 2020 bike. All rights reserved
-          </p>
+            <p class="text-gray-400">
+                © 2020 bike. All rights reserved
+            </p>
         </aside>
         <nav>
-          <h6 class="footer-title text-gray-300 text-[18px]">Get the App</h6>
-          <div class="grid grid-flow-row gap-4">
-            <a>
-              <img src="images/others/ios.png" alt="" class="w-2/3">
-            </a>
-            <a>
-              <img src="images/others/android.png" alt="" class="w-2/3">
-            </a>
-          </div>
+            <h6 class="footer-title text-gray-300 text-[18px]">Get the App</h6>
+            <div class="grid grid-flow-row gap-4">
+                <a>
+                    <img src="images/others/ios.png" alt="" class="w-2/3">
+                </a>
+                <a>
+                    <img src="images/others/android.png" alt="" class="w-2/3">
+                </a>
+            </div>
         </nav>
-      </footer>
+    </footer>
+
 </body>
 
 </html>
